@@ -32,4 +32,6 @@ jobs:
       - name: Deploy
         env:
           DEPLOY_API_KEY: ${{ secrets.DEPLOY_API_KEY }}
+          UNIVERSE_ID: ${{ secrets.UNIVERSE_ID }}
+          PLACE_ID: ${{ secrets.PLACE_ID }}
         run: ~/.rokit/bin/lune run scripts/lune/deploy.luau
